@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>IUAIYUUU — Abiyyu Rahman</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Manrope:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!--
+    IUAIYUUU PORTFOLIO CONCEPT:
+    - Inspired by IU’s elegance, honesty, and emotional storytelling.
+    - Focus on harmony between logic (AI) and empathy (human).
+    - Visual tone: pastel lilac, soft blue, natural light.
+    - Typography: clean, breathable, reflective — like IU’s calm aura.
+  -->
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <a href="#" class="logo">IUAI<span>YUUU</span></a>
+      <nav>
+        <a href="#skills">Craft</a>
+        <a href="#why">Values</a>
+        <a href="#about">About</a>
+        <a href="#concept">Concept</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section class="hero fade-in">
+      <div class="hero-photo"></div> <!-- foto blur -->
+      <div class="container hero-content">
+        <h1>welcome to my world — IUAIYUUU</h1>
+        <p class="byline">by. Abiyyu Rahman</p>
+        <p class="intro">
+          Exploring how intelligence can feel,  
+          how design can listen,  
+          and how technology can stay kind. <br><br>
+          This is my journey through design, development, and digital transformation —  
+          a space where logic meets empathy,  
+          and every line of code carries intention.
+        </p>
+      </div>
+    </section>
+
+    <!-- BREAK -->
+    <div class="section-break-large"></div>
+
+    <!-- MY CRAFT -->
+    <section id="skills" class="section fade-in">
+      <div class="container">
+        <h2>My Craft</h2>
+        <p class="section-desc">Creating harmony between systems and souls.</p>
+        <div class="grid">
+          <div class="card">
+            <h3>UI/UX Design</h3>
+            <p>Designing quiet, intuitive spaces where users feel understood — not just guided.</p>
+          </div>
+          <div class="card">
+            <h3>Tech Consulting</h3>
+            <p>Helping individuals and businesses grow through the right digital choices, crafted with care and clarity.</p>
+          </div>
+          <div class="card">
+            <h3>System Maintenance</h3>
+            <p>Keeping machines healthy, steady, and responsive — so humans can focus on what truly matters.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY WORK WITH ME -->
+    <section id="why" class="section alt fade-in">
+      <div class="container">
+        <h2>Why Work With Me?</h2>
+        <p class="section-desc">I don’t just build things — I build calm within complexity.</p>
+        <div class="grid">
+          <div class="card">
+            <h3>Problem-Solver Mindset</h3>
+            <p>Every challenge is a melody waiting to be arranged. I approach problems with clarity, precision, and empathy — always seeking balance.</p>
+          </div>
+          <div class="card">
+            <h3>Tech & Human-Centered</h3>
+            <p>Technology should never forget its audience. I design with both data and emotion, because good systems understand people first.</p>
+          </div>
+          <div class="card">
+            <h3>Reliable & Adaptable</h3>
+            <p>Growth means staying curious. I adapt to change without losing consistency — whether designing, consulting, or maintaining, I stay steady and sincere.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section fade-in">
+      <div class="container about">
+        <h2>About</h2>
+        <p>I’m <strong>Abiyyu Rahman</strong>, someone who finds comfort in both gadgets and gentle moments. My story started with tinkering on PCs, helping friends troubleshoot, and even building Ethereum rigs when blockchain felt like the future.</p>
+        <p>Now, I’m diving deeper into <strong>Artificial Intelligence</strong> and <strong>Cybersecurity</strong> through my Master’s studies — learning how machines can think, and how humans can trust them.</p>
+        <p>Beyond the screen, I’m that guy who helps organize reptile contests, runs with local crews, and talks about audio gear for fun.</p>
+        <p class="tagline"><em>“Kadang kidding, kadang koding.”</em></p>
+      </div>
+    </section>
+
+    <!-- CONCEPT -->
+    <section id="concept" class="section fade-in">
+      <div class="container about">
+        <h2>The Concept — IUAIYUUU</h2>
+        <p><strong>IUAIYUUU</strong> isn’t just a name — it’s a reflection of balance.<br>
+        <strong>“IU”</strong> represents warmth, empathy, and emotion — inspired by the artistry and sincerity of Lee Ji-eun.<br>
+        <strong>“AI”</strong> represents logic, precision, and curiosity — the world of artificial intelligence that drives my academic and creative journey.<br>
+        And <strong>“YUUU”</strong> is me — the human in between, blending emotion and computation, art and science.</p>
+        <p>This portfolio is built upon the idea that technology can be gentle — that systems can understand, and that design can listen. Like IU’s music, I want my work to feel calm, genuine, and deeply human.</p>
+        <p class="tagline"><em>“AI that listens, design that feels.”</em></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> IUAIYUUU — AI that listens, design that feels.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const fadeEls = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.2 });
+    fadeEls.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
