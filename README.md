@@ -1,11 +1,11 @@
-# 🌸 IUAIYUUU — Portfolio by Abiyyu Rahman
+#  IUAIYUUU — Portfolio by Abiyyu Rahman
 
 > *"AI that listens, design that feels."*  
 > Capstone Project — Hacktiv8 x IBM Granite
 
 ---
 
-## 🧩 1. Project Title
+##  1. Project Title
 **IUAIYUUU — Minimalist Personal Portfolio Website**
 
 ---
@@ -27,7 +27,7 @@ to create a calm, reflective user experience.
 
 ---
 
-## 🧠 3. Technologies Used
+##  3. Technologies Used
 | Category | Stack |
 |-----------|--------|
 | **Frontend** | HTML5, CSS3 |
@@ -37,7 +37,7 @@ to create a calm, reflective user experience.
 
 ---
 
-## ✨ 4. Features
+##  4. Features
 - Responsive static landing page
 - Minimalist IU-inspired visual design
 - Soft lilac gradient & blur photo background
@@ -51,7 +51,8 @@ to create a calm, reflective user experience.
 
 ---
 
-## ⚙️ 5. Setup Instructions
+##  5. Setup Instructions
 1. Clone or download this repository:
    ```bash
    git clone https://github.com/iuaiyuuu/iuaiyuuu-portfolio.git
+
